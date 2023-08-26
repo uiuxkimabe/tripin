@@ -1,0 +1,142 @@
+/*? global clearing */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--hind);
+}
+
+:root {
+  /* font-family */
+  --hind: "Hind", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  /* color */
+  --basic: #ffffff;
+  --dark: #1d1d1d;
+  --general: #898989;
+  --primary: #0e922f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--poppins);
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.mark {
+  color: var(--primary);
+}
+
+/* === NAV === */
+
+nav {
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 0.5px solid #dedede;
+  background-color: var(--basic);
+}
+
+nav a {
+  color: var(--dark);
+}
+
+nav .navigator ul {
+  position: absolute;
+  list-style: none;
+  transform: rotateX(90deg);
+}
+
+/* === END NAV === */
+
+/* === FILTER ==== */
+
+#filter {
+  padding: 1em 0;
+  text-align: center;
+  position: sticky;
+  top: 55px;
+  z-index: 1;
+  background-color: var(--basic);
+}
+
+#filter ul {
+  width: 100%;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+#filter ul::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-villa {
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.filter-villa ul li {
+  padding: 0.5em;
+  color: var(--general);
+}
+
+.advance-filter {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  justify-content: space-evenly;
+  gap: 0.6em;
+}
+
+/* === END FILTER ==== */
+
+/* === MAIN ==== */
+
+main {
+  position: relative;
+  padding: 1em 0;
+}
+
+main a {
+  color: var(--dark);
+}
+
+main .row {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+main .card-rooms .img {
+  display: block;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 0.4em;
+  background-color: var(--primary);
+}
+
+/* === END MAIN ==== */
