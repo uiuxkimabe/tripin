@@ -107,10 +107,13 @@ nav .navigator ul {
 }
 
 .advance-filter {
-  border: 1px solid black;
+  color: var(--general);
+  border: 1px solid var(--general);
   padding: 0.5em 1em;
   justify-content: space-evenly;
   gap: 0.6em;
+  background-color: var(--basic);
+  border-radius: 10px;
 }
 
 /* === END FILTER ==== */
@@ -128,7 +131,7 @@ main a {
 
 main .row {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5em;
+  gap: 1.2em;
 }
 
 main .card-rooms .img {
@@ -140,3 +143,43 @@ main .card-rooms .img {
 }
 
 /* === END MAIN ==== */
+
+/* === SECTION DETAIL VILLA === */
+
+#detail-villa {
+  padding: 1em 0;
+}
+
+#detail-villa .row {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.img-preview {
+  height: 300px;
+  background-color: var(--primary);
+}
+
+.description {
+  margin: 0.8em 0;
+}
+
+.facilities {
+  margin: 1em 0;
+}
+
+.facilities ul {
+  margin-top: 0.5em;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1em;
+  list-style: none;
+}
+
+.hoster .col {
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 0.5em;
+}
+
+/* === END SECTION DETAIL VILLA === */
