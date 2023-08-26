@@ -170,10 +170,15 @@ main .card-rooms .img {
 
 .facilities ul {
   margin-top: 0.5em;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1em;
   list-style: none;
+}
+
+.facilities ul li {
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--general);
 }
 
 .hoster .col {
