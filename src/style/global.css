@@ -142,5 +142,9 @@ main .card-rooms .img {
   background-color: var(--primary);
 }
 
-/* === END MAIN ==== */
+.card-rooms .loc {
+  justify-content: flex-start;
+  gap: 4px;
+}
 
+/* === END MAIN ==== */

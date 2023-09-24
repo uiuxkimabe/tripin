@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="tripin merupakan platform jasa yang menyewakan hunian berupa villa, kamar, dan lain sebagainya. Selain jasa tersebut, jasa lain juga kami sediakan, diantaranya adalah jasa sewa mobil, motor, truk untuk kebutuhan acara, catering, alat barbeque hingga bahan makanan untuk menunjang kegiatan."
+    />
     <title>✨ Scratch Project ✨</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- 👇 css code file 👇 -->
     <link rel="stylesheet" href="./src/style/global.css" />
 
@@ -60,20 +66,9 @@
             <div class="filter-villa d-flex">
               <ul class="d-flex">
                 <li>All</li>
-                <li>Rooms</li>
-                <li>Lansdscape</li>
-                <li>Pool</li>
-                <li>Campsite</li>
-                <li>Instagrammable</li>
-                <li>Fisher</li>
-                <li>Cottage</li>
-                <li>Building</li>
-                <li>Field</li>
-                <li>Garden</li>
-                <li>Flowers</li>
-                <li>Towers</li>
-                <li>Rainy</li>
-                <li>Foggy</li>
+                <li>Premium</li>
+                <li>Medium</li>
+                <li>Large</li>
               </ul>
               <button type="button" class="advance-filter d-flex">
                 <span class="material-symbols-outlined"> tune </span>
@@ -91,36 +86,68 @@
     <main>
       <div class="container">
         <div class="row d-grid">
-          <a href="villa-1.html" class="card-rooms">
+          <a
+            href="villa-1.html"
+            class="card-rooms"
+            data-aos="fade-down"
+            data-aos-delay="50"
+          >
             <span class="img"></span>
             <figcaption>
               <h4>Casandra Villa</h4>
               <p>IDR. <span class="price">2500000</span></p>
-              <p>Cisarua, Indonesia</p>
+              <figcaption class="d-flex loc">
+                <span class="material-symbols-outlined"> location_on </span>
+                <p>Cisarua, Indonesia</p>
+              </figcaption>
             </figcaption>
           </a>
-          <a href="#" class="card-rooms">
+          <a
+            href="#"
+            class="card-rooms"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
             <span class="img"></span>
             <figcaption>
               <h4>Santoria Village</h4>
               <p>IDR. <span class="price">2500000</span></p>
-              <p>Cisarua, Indonesia</p>
+              <figcaption class="d-flex loc">
+                <span class="material-symbols-outlined"> location_on </span>
+                <p>Cisarua, Indonesia</p>
+              </figcaption>
             </figcaption>
           </a>
-          <a href="#" class="card-rooms">
+          <a
+            href="#"
+            class="card-rooms"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
             <span class="img"></span>
             <figcaption>
               <h4>Santoria Village</h4>
               <p>IDR. <span class="price">2500000</span></p>
-              <p>Cisarua, Indonesia</p>
+              <figcaption class="d-flex loc">
+                <span class="material-symbols-outlined"> location_on </span>
+                <p>Cisarua, Indonesia</p>
+              </figcaption>
             </figcaption>
           </a>
-          <a href="#" class="card-rooms">
+          <a
+            href="#"
+            class="card-rooms"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <span class="img"></span>
             <figcaption>
               <h4>Santoria Village</h4>
               <p>IDR. <span class="price">2500000</span></p>
-              <p>Cisarua, Indonesia</p>
+              <figcaption class="d-flex loc">
+                <span class="material-symbols-outlined"> location_on </span>
+                <p>Cisarua, Indonesia</p>
+              </figcaption>
             </figcaption>
           </a>
         </div>
@@ -129,6 +156,11 @@
 
     <!-- END MAIN -->
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
   </body>
