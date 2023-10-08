@@ -8,6 +8,13 @@
       name="description"
       content="tripin merupakan platform jasa yang menyewakan hunian berupa villa, kamar, dan lain sebagainya. Selain jasa tersebut, jasa lain juga kami sediakan, diantaranya adalah jasa sewa mobil, motor, truk untuk kebutuhan acara, catering, alat barbeque hingga bahan makanan untuk menunjang kegiatan."
     />
+    <meta name="keywords" content="villa puncak,sewa villa puncak, harga villa puncak, harga villa puncak bogor, kamar villa puncak, private house villa puncak, villa puncak murah,villa puncak ada kolam renang, villa puncak ada billiard,villa puncak akses bus,villa puncak bogor,
+    villa puncak bagus,booking villa puncak, villa puncak cisarua,villa puncak cipanas,villa puncak cisarua megamendung,villa puncak ciloto,
+    villa puncak cibodas,villa puncak cianjur,
+    villa puncak cilember,catering villa puncak,
+    villa puncak dekat taman safari,villa puncak dibawah 1 juta, villa puncak dekat curug, villa puncak dengan private pool, villa puncak dengan view bagus,villa puncak dan harganya,
+    villa puncak aesthetic, villa puncak aesthetic murah,villa estetik di puncak" />
+    <meta name="author" content="Kiki Afrianto Brata" />
     <title>✨ Scratch Project ✨</title>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -35,11 +42,10 @@
           <div class="logo">
             <a href="#">tripin</a>
           </div>
-          <div class="search">
-            <input type="text" />
-          </div>
+          <button type="button" id="btnMenu">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
           <div class="navigator">
-            <button>Button</button>
             <ul>
               <li>
                 <a href="#">Layanan Lain</a>
@@ -62,18 +68,16 @@
       <div class="container">
         <div class="row">
           <figcaption>
-            <h1>Enjoy your trip</h1>
+            <figcaption>
+              <h1><span class="mark">Tripin Dulu</span>, Liburan Seru 👋🏻</h1>
+            </figcaption>
             <div class="filter-villa d-flex">
               <ul class="d-flex">
-                <li>All</li>
+                <li class="active">All</li>
                 <li>Premium</li>
                 <li>Medium</li>
                 <li>Large</li>
               </ul>
-              <button type="button" class="advance-filter d-flex">
-                <span class="material-symbols-outlined"> tune </span>
-                <h3>Filter</h3>
-              </button>
             </div>
           </figcaption>
         </div>
@@ -91,10 +95,13 @@
             class="card-rooms"
             data-aos="fade-down"
             data-aos-delay="50"
+            class="all medium"
           >
-            <span class="img"></span>
+            <span class="img">
+              <img src="./src/assets/villa ajap/villa-ajap 1.jpeg" alt="">
+            </span>
             <figcaption>
-              <h4>Casandra Villa</h4>
+              <h3>Villa Ajap</h4>
               <p>IDR. <span class="price">2500000</span></p>
               <figcaption class="d-flex loc">
                 <span class="material-symbols-outlined"> location_on </span>
