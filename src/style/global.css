@@ -142,10 +142,28 @@ nav a {
   margin-top: 1em;
 }
 
+.filter-villa ul {
+  justify-content: flex-start;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.filter-villa ul::-webkit-scrollbar {
+  display: none;
+}
+
 .filter-villa ul li {
-  padding: 0.2em 1em;
+  flex: 0 0 100px;
+  padding: 5px 0;
+  text-align: center;
   border: 1px solid var(--general);
   border-radius: 5px;
+}
+
+.filter-villa ul li.active {
+  background-color: var(--dark);
+  font-weight: 600;
+  color: var(--basic);
 }
 
 /* === END FILTER ==== */
