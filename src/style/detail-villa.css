@@ -168,12 +168,14 @@ nav a {
   margin-top: 1em;
 }
 
-.date-ev {
+.date-ev,
+.downpayment {
   width: 100%;
   gap: 1em;
 }
 
-.date-ev figcaption {
+.date-ev figcaption,
+.downpayment figcaption {
   width: 100%;
 }
 
@@ -196,11 +198,19 @@ nav a {
   margin-bottom: 1.5em;
 }
 
+.bookNow {
+  padding: 0.7em;
+  font-size: 1.1rem;
+  background-color: var(--dark);
+  color: var(--basic);
+  border: none;
+}
+
 /* === END SECTION DETAIL VILLA === */
 
 /* === BUNDLING PACKAGE === */
 
-#bundling {
+/* #bundling {
   margin: 2em 0;
   padding: 1em 0;
   background-color: #eeeeee;
@@ -238,7 +248,7 @@ nav a {
   color: var(--basic);
   border: none;
   border-radius: 5px;
-}
+} */
 
 /* === END BUNDLING PACKAGE === */
 

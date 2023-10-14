@@ -182,26 +182,41 @@
             <div class="row d-grid booking-form">
               <figcaption>
                 <label>Name</label><br />
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Name"  id="nama"/>
               </figcaption>
               <figcaption>
                 <label>Pax</label><br />
-                <input type="number" placeholder="Pax" />
+                <input type="number" placeholder="Pax" id="pax" />
               </figcaption>
               <div class="date-ev d-flex">
                 <figcaption id="ci">
                   <label>Check In</label><br />
-                  <input type="date" name="check_in" />
+                  <input type="date" name="check_in" id="cekin" />
                 </figcaption>
                 <figcaption id="co">
                   <label>Check Out</label><br />
-                  <input type="date" name="check_out" />
+                  <input type="date" name="check_out" id="cekout" />
                 </figcaption>
               </div>
               <figcaption>
                 <label>Phone</label><br />
-                <input type="tel" name="phoneNumber" />
+                <input type="tel" name="phoneNumber" id="phone" />
               </figcaption>
+              <div class="downpayment d-flex">
+                <figcaption id="min-dp">
+                  <label>Minimal Deposit</label><br />
+                  <input type="text" value="1.320.000" disabled />
+                </figcaption>
+                <figcaption id="attach">
+                  <label>Bukti Transfer</label><br />
+                  <input type="file" id="bukti" />
+                </figcaption>
+              </div>
+              <figcaption>
+                <label>Pesan Tambahan</label><br />
+                <input type="text" id="add" />
+              </figcaption>
+              <button type="submit" class="bookNow">Pesan Sekarang</button>
             </div>
           </form>
           <figcaption class="rules">
@@ -249,7 +264,7 @@
     <!-- END SECTION DETAIL VILLA -->
 
     <!-- SECTION BUNDLING -->
-    <section id="bundling">
+    <!-- <section id="bundling">
       <div class="container">
         <figcaption>
           <h1>Paket Bundling</h1>
@@ -300,7 +315,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END SECTION BUNDLING -->
 
     <!-- SECTION SIMILAR VILLA -->
