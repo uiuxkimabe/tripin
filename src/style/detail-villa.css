@@ -54,6 +54,7 @@ h6 {
 nav {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: var(--basic);
   padding: 1em 0;
 }
@@ -67,25 +68,44 @@ nav a {
 /* === SECTION DETAIL VILLA === */
 
 #detail-villa {
-  padding: 2em 0;
+  margin-bottom: 2em;
 }
 
 .img-preview {
-  height: 300px;
+  height: 400px;
   background-color: var(--primary);
-  margin: 1em 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-preview::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
 .villa-detail {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
+  margin-top: 2em;
 }
 
 .calender .circle-span {
   display: block;
   width: 30px;
   height: 30px;
-  background-color: blue;
+  background-color: green;
 }
 
 .calender .book-stat {
@@ -106,12 +126,12 @@ nav a {
   margin: 1em 0;
 }
 
-.villa-desc figcaption h3 {
-  margin-bottom: 0.8em;
-}
-
 .villa-desc figcaption p {
   color: var(--general);
+}
+
+.description {
+  text-align: justify;
 }
 
 .facilities ul {
@@ -127,10 +147,130 @@ nav a {
   color: var(--general);
 }
 
-.hoster .col {
+.guider .col {
   justify-content: flex-start;
   gap: 10px;
-  margin-top: 0.5em;
+}
+
+.order-section {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.order-section ul {
+  margin-top: 1em;
+  list-style: none;
+}
+
+.booking-form {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.date-ev {
+  width: 100%;
+  gap: 1em;
+}
+
+.date-ev figcaption {
+  width: 100%;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 0.8em;
+}
+
+.rules ul li {
+  padding: 0.8em 0.5em;
+  font-size: 0.8rem;
+}
+
+.rules ul li:nth-child(odd) {
+  background-color: #c1ffd0;
+  color: var(--dark);
+}
+
+.rules .col:first-child {
+  margin-bottom: 1.5em;
 }
 
 /* === END SECTION DETAIL VILLA === */
+
+/* === BUNDLING PACKAGE === */
+
+#bundling {
+  margin: 2em 0;
+  padding: 1em 0;
+  background-color: #eeeeee;
+}
+
+#bundling .row {
+  margin: 1em 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.card-package {
+  padding: 1em;
+  border-radius: 10px;
+  background-color: var(--basic);
+  border: 1px solid var(--general);
+}
+
+.card-package figcaption {
+  text-align: center;
+}
+
+.card-package ul {
+  margin: 10px 0;
+  text-align: left;
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.card-package button {
+  margin-top: 1em;
+  width: 100%;
+  padding: 0.8em 2em;
+  background-color: var(--primary);
+  color: var(--basic);
+  border: none;
+  border-radius: 5px;
+}
+
+/* === END BUNDLING PACKAGE === */
+
+/* === SIMILAR VILLA === */
+
+#similar {
+  padding: 1em 0;
+}
+
+#similar .row {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+#similar .card-room {
+  overflow: hidden;
+  display: block;
+}
+
+#similar .card-room img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* === END SIMILAR VILLA === */
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  color: var(--basic);
+  padding: 1em 0;
+  background-color: var(--primary);
+}
+/* === END FOOTER === */
