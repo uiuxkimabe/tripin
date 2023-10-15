@@ -110,36 +110,3 @@ class hargaModal {
   arifPrice.innerHTML = priceShow.toLocaleString("id-ID");
   console.info(arif.premiumWd());
 }
-
-// const btn wa
-const bookNow = document.querySelector(".bookNow");
-const nama = document.getElementById("nama");
-const pax = document.getElementById("pax");
-const cekin = document.getElementById("cekin");
-const cekout = document.getElementById("cekout");
-const phone = document.getElementById("phone");
-const bukti = document.getElementById("bukti");
-const add = document.getElementById("add");
-
-function msg() {
-  const url =
-    "https://wa.me/081385532791?text=Selamat%20Datang%20di%20Trippin%20!!%0AKami%20Akan%20Mengkonfirmasi%20Pesanan%20Villa%20Anda%20Sebagai%20Berikut%20%3A%0ANama%20%3A%20*" +
-    nama.textContent +
-    "*%0AJumlah%20Pax%20%3A%20*" +
-    pax.textContent +
-    "*%0ACheck%20In%20%3A%20*" +
-    cekin.textContent +
-    "*%0ACheck%20Out%20%3A%20*" +
-    cekout.textContent +
-    "*%0APhone%20%3A%20*" +
-    phone.textContent +
-    "*%0ABukti%20Tf%20%3A%20*tf*%0APesan%20Tambahan%20%3A%20*" +
-    add.textContent +
-    "%20msg*";
-
-  window.open(url);
-}
-
-bookNow.addEventListener("click", () => {
-  msg();
-});
