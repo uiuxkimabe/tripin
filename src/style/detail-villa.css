@@ -85,7 +85,6 @@ nav a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   justify-content: flex-start;
-  gap: 1em;
   overflow: hidden;
   transform: translateY(100%);
   transition: 0.3s ease-in-out;
@@ -124,7 +123,7 @@ nav a {
   top: 50%;
   left: 0;
   z-index: 2;
-  height: 500px;
+  height: 100%;
   padding: 10px;
   transform: translateY(-50%);
   background: none;
@@ -136,7 +135,7 @@ nav a {
   top: 50%;
   right: 0;
   z-index: 2;
-  height: 500px;
+  height: 100%;
   padding: 10px;
   transform: translateY(-50%);
   background: none;
