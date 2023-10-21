@@ -35,14 +35,7 @@ class hargaModal {
     let total = this.basicPrice * this.percentWe + this.feeGuide;
     return total;
   }
-  deposite() {
-    let minDeposite = this.basicPrice / 2;
-    return minDeposite;
-  }
 }
-
-const dp = document.querySelector(".downpayment .deposite");
-
 
 // Villa Ajap
 {
@@ -58,11 +51,8 @@ const dp = document.querySelector(".downpayment .deposite");
   // Tampilan di halaman beranda
   villaAjapPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
   villaAjapPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
-  let minDp = priceShowWd / 2;
   console.info(priceShowWd, priceShowWe);
-  // dp.value = minDp.toLocaleString("id-ID");
 }
-
 
 // Villa Erni
 {
@@ -78,7 +68,5 @@ const dp = document.querySelector(".downpayment .deposite");
   // Tampilan di halaman beranda
   villaErniPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
   villaErniPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
-  let minDp = priceShowWd / 2;
   console.info(priceShowWd, priceShowWe);
-  // dp.value = minDp.toLocaleString("id-ID");
 }

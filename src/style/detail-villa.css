@@ -249,6 +249,26 @@ nav a {
   gap: 10px;
 }
 
+.destination {
+  margin: 1em 0;
+}
+
+.destination ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: var(--general);
+}
+
+.destination ul li {
+  padding: 10px;
+  border: 1px solid var(--general);
+  border-radius: 10px;
+}
+
 .order-section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;

@@ -82,6 +82,36 @@
             alt="Tripin Mitra Media"
           />
         </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 5.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 6.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 7.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 8.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 9.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
         <div class="cta-nav">
           <button type="button" id="prev" disabled>
             <span class="material-symbols-outlined"> arrow_back_ios </span>
@@ -183,7 +213,6 @@
                   </ul>
                 </figcaption>
               </figcaption>
-              
             </div>
             <div class="calender">
               <h1>Booking Status</h1>
@@ -212,6 +241,17 @@
                     <p>Kami siap memandu perjalanan anda.</p>
                   </figcaption>
                 </a>
+              </figcaption>
+              <figcaption class="destination">
+                <h3>Destinasi Terdekat</h3>
+                <ul>
+                  <li>Taman Safari Indonesia</li>
+                  <li>Cimory Riverside</li>
+                  <li>Curug 7 Cilember</li>
+                  <li>Perkebunan Teh Gunung Mas</li>
+                  <li>Masjid Atta'awun</li>
+                  <li>Gantole (Paralayang)</li>
+                </ul>
               </figcaption>
             </div>
           </div>
@@ -269,11 +309,11 @@
               <div class="date-ev d-flex">
                 <figcaption id="ci">
                   <label>Check In</label><br />
-                  <input type="date" name="check_in" id="cekin" />
+                  <input type="date" name="check_in" class="date checkIn" />
                 </figcaption>
                 <figcaption id="co">
                   <label>Check Out</label><br />
-                  <input type="date" name="check_out" id="cekout" />
+                  <input type="date" name="check_out" class="date checkOut" />
                 </figcaption>
               </div>
               <figcaption>
@@ -281,24 +321,35 @@
                 <input type="tel" name="phoneNumber" id="phone" />
               </figcaption>
               <div class="downpayment d-flex">
-                <figcaption id="min-dp">
-                  <label>Minimal Deposit</label><br />
-                  <input type="text" class="deposite" disabled />
-                  <p class="noteDp">*) Deposit 50%</p>
+                <figcaption id="night">
+                  <label>Jumlah Hari</label><br />
+                  <input type="number" class="days" disabled />
                 </figcaption>
                 <figcaption id="attach">
                   <label>Bukti Transfer</label><br />
                   <input type="file" id="bukti" />
+                  <p class="noteDp">*) Deposit 50%</p>
                 </figcaption>
               </div>
               <figcaption>
                 <label>Pesan Tambahan</label><br />
                 <input type="text" id="add" />
               </figcaption>
+              <figcaption class="totalPayment">
+                <label>Total Pemesanan Villa</label>
+                <h1 id="total">3.000.000</h1>
+                <ul>
+                  <li>
+                    <h3>Notes</h3>
+                  </li>
+                  <li>Harga menyesuaikan dengan tanggal anda check in.</li>
+                  <li>Weekday adalah : Senin - Kamis</li>
+                  <li>Weekend adalah : Jum'at - Minggu</li>
+                </ul>
+              </figcaption>
               <button type="submit" id="bookNow">Pesan Sekarang</button>
             </div>
           </form>
-          
         </div>
       </div>
     </section>
