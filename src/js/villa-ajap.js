@@ -53,59 +53,15 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
-// Get bulan dan tanggal
-const pickMonth = new Date().getMonth(); // [0-11] (Januari - Desember)
-const pickDate = new Date().getDate();
-const pickDay = new Date().getDay(); // [0-6] (Minggu - Sabtu)
-
-// Array untuk menyesuaikan index dengan hari dan bulan
-let days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"]; // [0-6]
-let months = [
-  "Januari",
-  "Februari",
-  "Maret",
-  "April",
-  "Mei",
-  "Juni",
-  "Juli",
-  "Agustus",
-  "September",
-  "Oktober",
-  "November",
-  "Desember",
-]; // [0-11]
-
-// Harga Modal
-class hargaModal {
-  basicPrice; // Harga Modal
-  percentWd; // Percentase Margin u/ Weekday
-  percentWe; // Percentase Margin u/ Weekend
-  feeGuide = 150000; // fee untuk guider
-  //   Method Premium Villa
-  priceWd() {
-    let total = this.basicPrice * this.percentWd + this.feeGuide;
-    return total;
-  }
-  priceWe() {
-    let total = this.basicPrice * this.percentWe + this.feeGuide;
-    return total;
-  }
-  deposite() {
-    let minDeposite = this.basicPrice / 2;
-    return minDeposite;
-  }
-}
-
-const dp = document.querySelector(".downpayment .deposite");
 
 // Villa Ajap
 {
-  const villaAjapPriceWd = document.querySelector(".ajap .price-wd");
-  const villaAjapPriceWe = document.querySelector(".ajap .price-we");
+  const villaAjapPriceWd = document.querySelector("#ajap .price-wd");
+  const villaAjapPriceWe = document.querySelector("#ajap .price-we");
   const villaAjap = new hargaModal();
   villaAjap.basicPrice = 1500000;
   villaAjap.percentWd = 1.66;
-  villaAjap.percentWe = 2.66;
+  villaAjap.percentWe = 2;
   let priceShowWd = villaAjap.priceWd();
   let priceShowWe = villaAjap.priceWe();
 
@@ -114,5 +70,7 @@ const dp = document.querySelector(".downpayment .deposite");
   villaAjapPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
   let minDp = priceShowWd / 2;
   console.info(priceShowWd, priceShowWe);
-  dp.value = minDp.toLocaleString("id-ID");
+  // dp.value = minDp.toLocaleString("id-ID");
 }
+
+ 

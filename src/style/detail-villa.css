@@ -96,7 +96,7 @@ nav a {
 
 .slider-photo {
   flex: 0 0 100%;
-  height: 500px;
+  /* height: 500px; */
   background-color: var(--primary);
   overflow: hidden;
   display: flex;
@@ -108,7 +108,6 @@ nav a {
 
 .slider-photo img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -241,6 +240,10 @@ nav a {
   color: var(--general);
 }
 
+.guider {
+  margin-top: 1em;
+}
+
 .guider .col {
   justify-content: flex-start;
   gap: 10px;
@@ -249,11 +252,18 @@ nav a {
 .order-section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
+  margin-top: 1em;
 }
 
 .order-section ul {
   margin-top: 1em;
   list-style: none;
+}
+
+.order-section form {
+  padding: 1em;
+  border: 1px solid var(--general);
+  border-radius: 10px;
 }
 
 .booking-form {
