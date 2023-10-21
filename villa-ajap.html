@@ -58,13 +58,40 @@
         <img src="./src/assets/villa ajap/villa-ajap 1.jpeg" alt="trippined" />
       </div>
       <div class="slider d-flex">
-        <div class="slider-photo"></div>
-        <div class="slider-photo"></div>
-        <div class="slider-photo"></div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 1.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 2.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 3.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
+        <div class="slider-photo">
+          <img
+            src="./src/assets/villa ajap/villa-ajap 4.jpeg"
+            alt="Tripin Mitra Media"
+          />
+        </div>
         <div class="cta-nav">
-          <button type="button">prev</button>
-          <button type="button">next</button>
-          <button type="button" id="close">close</button>
+          <button type="button" id="prev" disabled>
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+          </button>
+          <button type="button" id="next">
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </button>
+          <button type="button" id="close">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
         </div>
       </div>
       <div class="container">
@@ -111,59 +138,63 @@
                 <h3>Fasilitas</h3>
                 <figcaption>
                   <ul class="d-grid">
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined">
                         single_bed
                       </span>
-                      <p>6 Kamar</p>
+                      <p>6 Kamar Tidur</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> shower </span>
-                      <p>6 Toilet</p>
+                      <p>6 Kamar Mandi</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> air </span>
                       <p>AC</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> wifi </span>
-                      <p>Wifi</p>
+                      <p>Akses Internet</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined">
                         sports_baseball
                       </span>
                       <p>Billiard</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> lyrics </span>
                       <p>Karaoke</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined">
                         water_heater
                       </span>
                       <p>Water Heater</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> pool </span>
                       <p>Kolam Renang</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined">
                         outdoor_garden
                       </span>
                       <p>Halaman Luas</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined"> landscape </span>
                       <p>Pemandangan</p>
                     </li>
-                    <li class="d-flex">
+                    <li>
                       <span class="material-symbols-outlined">
                         local_parking
                       </span>
-                      <p>Parking</p>
+                      <p>Lahan Parkir</p>
+                    </li>
+                    <li>
+                      <span class="material-symbols-outlined"> cooking </span>
+                      <p>Dapur</p>
                     </li>
                   </ul>
                 </figcaption>
@@ -216,6 +247,7 @@
                 <figcaption id="min-dp">
                   <label>Minimal Deposit</label><br />
                   <input type="text" class="deposite" disabled />
+                  <p class="noteDp">*) Deposit 50%</p>
                 </figcaption>
                 <figcaption id="attach">
                   <label>Bukti Transfer</label><br />
@@ -232,38 +264,34 @@
           <figcaption class="rules">
             <div class="col">
               <figcaption>
-                <h1>Keuntungan</h1>
+                <h1>Cara & Ketentuan</h1>
                 <p>Baca dengan seksama</p>
               </figcaption>
               <ul>
                 <li>
-                  Untuk setiap menginap anda mendapatkan souvenir trippin.
+                  Pastikan untuk cek kembali untuk tanggal kegiatan yang akan
+                  dilaksanakan.
+                </li>
+                <li>Deposit adalah sebesar 50% dari harga villa 1 malam.</li>
+                <li>
+                  Deposit yang sudah di setorkan tidak dapat dikembalikan
+                  apabila terjadi cancel.
                 </li>
                 <li>
-                  Untuk pemesanan non paket, mendapatkan gratis 1Kg ikan nila.
-                </li>
-                <li>Free welcome drink.</li>
-              </ul>
-            </div>
-            <div class="col">
-              <figcaption>
-                <h1>Syarat & Ketentuan</h1>
-                <p>Baca dengan seksama</p>
-              </figcaption>
-              <ul>
-                <li>Pastikan untuk cek kembali pemesanan anda.</li>
-                <li>
-                  Lakukan pembayaran deposit terlebih dahulu, agar proses
-                  booking dapat dilanjutkan update ke dalam kalender.
+                  Screenshot detail pemesanan sebagai bukti dan bahan konfirmasi
+                  kepada kami.
                 </li>
                 <li>
-                  Minimal deposit adalah 40% dari total penginapan / malam.
-                </li>
-                <li>
-                  Pemandu kami akan segera menghubungi pemesanan anda segera.
+                  Lakukan konfirmasi pembayaran, bisa link berikut :
+                  <a href="#" target="_blank">08123456789</a>
                 </li>
                 <li>
                   Penyelesaian sisa pembayaran dilakukan sebelum check in.
+                </li>
+                <li>
+                  <h3>Jam operasional :</h3>
+                  <p>Jam check in berlaku pada jam : 14.30</p>
+                  <p>Jam check out berlaku pada jam : 12.00</p>
                 </li>
               </ul>
             </div>
@@ -277,7 +305,7 @@
     <section id="similar">
       <div class="container">
         <figcaption>
-          <h1>Similar Villa</h1>
+          <h1>Villa Lainnya</h1>
           <p>Rekomendasi villa lain</p>
         </figcaption>
         <div class="row d-grid">
@@ -307,13 +335,24 @@
     <!-- FOOTER -->
     <footer>
       <div class="container">
-        <div class="row">trippin.id</div>
+        <div class="row d-grid">
+          <div class="col">
+            <a href="index.html">trivvin.com</a>
+          </div>
+          <div class="col navigasi">
+            <h3>Temukan Kebutuhanmu</h3>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="confirm.html">Konfirmasi Pembayaran</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
     <!-- END FOOTER -->
 
     <!-- 👇 javascript code file 👇 -->
     <script src="./src/js/index.js"></script>
-    <script src="./src/js/price.js"></script>
+    <script src="./src/js/detail-villa.js"></script>
   </body>
 </html>

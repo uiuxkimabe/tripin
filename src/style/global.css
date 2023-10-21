@@ -208,4 +208,8 @@ main .card-rooms img {
   gap: 4px;
 }
 
+.price-show {
+  align-items: flex-start;
+}
+
 /* === END MAIN ==== */
