@@ -286,6 +286,18 @@ nav a {
   border-radius: 10px;
 }
 
+.order-section .rekening {
+  margin: 1em 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.order-section .qris {
+  max-width: 150px;
+  border: 1px solid black;
+}
+
 .booking-form {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1em;
@@ -298,9 +310,14 @@ nav a {
   gap: 1em;
 }
 
-.downpayment .noteDp {
-  color: var(--general);
+.downpayment .noteDp,
+.totalPayment ul li:not(:first-child) {
   font-size: 0.8em;
+  color: var(--general);
+}
+
+.totalPayment #total {
+  color: var(--primary);
 }
 
 .date-ev figcaption,

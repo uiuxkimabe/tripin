@@ -280,6 +280,20 @@
                   <p>Jam check in berlaku pada jam : 14.30</p>
                   <p>Jam check out berlaku pada jam : 12.00</p>
                 </li>
+                <li>
+                  <figcaption class="d-flex rekening">
+                    <div class="col">
+                      <h3>Transfer Via BNI</h3>
+                      <h3>No. Rek BNI : 1149164962</h3>
+                      <p>a.n Kiki Afriyanto Brata</p>
+                    </div>
+                    <img
+                      src="./src/assets/img/QR BNI Kiki Afrianto.jpeg"
+                      alt="Tripin Mitra Media"
+                      class="qris"
+                    />
+                  </figcaption>
+                </li>
               </ul>
             </div>
           </figcaption>
@@ -300,11 +314,11 @@
               <div class="date-ev d-flex">
                 <figcaption id="ci">
                   <label>Check In</label><br />
-                  <input type="date" name="check_in" id="cekin" />
+                  <input type="date" name="check_in" class="date checkIn" />
                 </figcaption>
                 <figcaption id="co">
                   <label>Check Out</label><br />
-                  <input type="date" name="check_out" id="cekout" />
+                  <input type="date" name="check_out" class="date checkOut" />
                 </figcaption>
               </div>
               <figcaption>
@@ -312,19 +326,31 @@
                 <input type="tel" name="phoneNumber" id="phone" />
               </figcaption>
               <div class="downpayment d-flex">
-                <figcaption id="min-dp">
-                  <label>Minimal Deposit</label><br />
-                  <input type="text" class="deposite" disabled />
-                  <p class="noteDp">*) Deposit 50%</p>
+                <figcaption id="night">
+                  <label>Jumlah Hari</label><br />
+                  <input type="number" class="days" disabled />
                 </figcaption>
                 <figcaption id="attach">
                   <label>Bukti Transfer</label><br />
                   <input type="file" id="bukti" />
+                  <p class="noteDp">*) Deposit 50%</p>
                 </figcaption>
               </div>
               <figcaption>
                 <label>Pesan Tambahan</label><br />
                 <input type="text" id="add" />
+              </figcaption>
+              <figcaption class="totalPayment">
+                <label>Total Pemesanan Villa</label>
+                <h1 id="total" name="total_payment">0</h1>
+                <ul>
+                  <li>
+                    <h3>Notes</h3>
+                  </li>
+                  <li>Harga menyesuaikan dengan tanggal anda check in.</li>
+                  <li>Weekday adalah : Senin - Kamis</li>
+                  <li>Weekend adalah : Jum'at - Minggu</li>
+                </ul>
               </figcaption>
               <button type="submit" id="bookNow">Pesan Sekarang</button>
             </div>

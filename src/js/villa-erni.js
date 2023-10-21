@@ -53,22 +53,49 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
+// pick booking
+const date = document.querySelectorAll(".date");
+const nights = document.querySelector(".downpayment #night .days");
+const total = document.querySelector(".totalPayment #total");
+function pickBook() {
+  let ci = new Date(date[0].value).getDate();
+  let co = new Date(date[1].value).getDate();
+  let dayCi = new Date(date[0].value).getDay();
+  let dayCo = new Date(date[1].value).getDay();
+  console.info(dayCi, dayCo);
+  let result = co - ci;
+  let totalPayment;
+  if (dayCi == 5 || dayCi == 6 || dayCi == 0) {
+    totalPayment = priceShowWe * result;
+  } else {
+    totalPayment = priceShowWd * result;
+  }
+  total.innerHTML = totalPayment.toLocaleString("id-ID");
+  nights.value = result;
+  return result;
+}
+
 // Villa Erni
+
 {
-   const villaErniPriceWd = document.querySelector("#erni .price-wd");
-   const villaErniPriceWe = document.querySelector("#erni .price-we");
-   const villaErni = new hargaModal();
-   villaErni.basicPrice = 1000000;
-   villaErni.percentWd = 1.66;
-   villaErni.percentWe = 2.9;
-   let priceShowWd = villaErni.priceWd();
-   let priceShowWe = villaErni.priceWe();
- 
-   // Tampilan di halaman beranda
-   villaErniPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
-   villaErniPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
-   let minDp = priceShowWd / 2;
-   console.info(priceShowWd, priceShowWe);
-   // dp.value = minDp.toLocaleString("id-ID");
- }
- 
+  date.forEach((element) => {
+    element.addEventListener("change", () => {
+      pickBook();
+      console.info(pickBook());
+    });
+  });
+
+  const villaErniPriceWd = document.querySelector("#Erni .price-wd");
+  const villaErniPriceWe = document.querySelector("#Erni .price-we");
+  const villaErni = new hargaModal();
+  villaErni.basicPrice = 1500000;
+  villaErni.percentWd = 1.66;
+  villaErni.percentWe = 2;
+  priceShowWd = villaErni.priceWd();
+  priceShowWe = villaErni.priceWe();
+
+  // Tampilan di halaman beranda
+  villaErniPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
+  villaErniPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
+  console.info(priceShowWd, priceShowWe);
+}
