@@ -54,31 +54,33 @@ prevBtn.addEventListener("click", () => {
 });
 
 // Villa Ajap
-{
-  const villaAjapPriceWd = document.querySelector("#ajap .price-wd");
-  const villaAjapPriceWe = document.querySelector("#ajap .price-we");
-  const villaAjap = new hargaModal();
-  villaAjap.basicPrice = 1500000;
-  villaAjap.percentWd = 1.66;
-  villaAjap.percentWe = 2;
-  let priceShowWd = villaAjap.priceWd();
-  let priceShowWe = villaAjap.priceWe();
 
-  // Tampilan di halaman beranda
-  villaAjapPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
-  villaAjapPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
-  // let minDp = priceShowWd / 2;
-  console.info(priceShowWd, priceShowWe);
-  // dp.value = minDp.toLocaleString("id-ID");
-}
+const villaAjapPriceWd = document.querySelector("#ajap .price-wd");
+const villaAjapPriceWe = document.querySelector("#ajap .price-we");
+const villaAjap = new hargaModal();
+villaAjap.basicPrice = 1500000;
+villaAjap.percentWd = 1.66;
+villaAjap.percentWe = 2;
+let priceShowWd = villaAjap.priceWd();
+let priceShowWe = villaAjap.priceWe();
+
+// Tampilan di halaman beranda
+villaAjapPriceWd.innerHTML = priceShowWd.toLocaleString("id-ID");
+villaAjapPriceWe.innerHTML = priceShowWe.toLocaleString("id-ID");
+// let minDp = priceShowWd / 2;
+console.info(priceShowWd, priceShowWe);
+// dp.value = minDp.toLocaleString("id-ID");
 
 // pick booking
 const date = document.querySelectorAll(".date");
 const nights = document.querySelector(".downpayment #night .days");
+const total = document.querySelector(".totalPayment #total");
 function pickBook() {
   let ci = new Date(date[0].value).getDate();
   let co = new Date(date[1].value).getDate();
   let result = co - ci;
+  let totalPayment = priceShowWd * result;
+  total.innerHTML = totalPayment.toLocaleString("id-ID");
   nights.value = result;
   return result;
 }
