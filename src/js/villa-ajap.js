@@ -52,6 +52,8 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
+
+
 // pick booking
 const date = document.querySelectorAll(".date");
 const nights = document.querySelector(".downpayment #night .days");
