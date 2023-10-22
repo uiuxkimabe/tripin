@@ -53,7 +53,6 @@ prevBtn.addEventListener("click", () => {
   }
 });
 
-
 // pick booking
 const date = document.querySelectorAll(".date");
 const nights = document.querySelector(".downpayment #night .days");
@@ -89,9 +88,9 @@ function pickBook() {
   const villaErniPriceWd = document.querySelector("#erni .price-wd");
   const villaErniPriceWe = document.querySelector("#erni .price-we");
   const villaErni = new hargaModal();
-  villaErni.basicPrice = 1500000;
+  villaErni.basicPrice = 1000000;
   villaErni.percentWd = 1.66;
-  villaErni.percentWe = 2;
+  villaErni.percentWe = 2.9;
   priceShowWd = villaErni.priceWd();
   priceShowWe = villaErni.priceWe();
 
