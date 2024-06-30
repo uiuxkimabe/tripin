@@ -63,7 +63,7 @@ function pickBook() {
   let co = new Date(date[1].value).getDate();
   let dayCi = new Date(date[0].value).getDay();
   let dayCo = new Date(date[1].value).getDay();
-  console.info(dayCi, dayCo, ci,co);
+  console.info(ci, co);
   let result = co - ci;
   let totalPayment;
   if (dayCi == 5 || dayCi == 6 || dayCi == 0) {
